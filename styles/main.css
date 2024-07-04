@@ -1,34 +1,110 @@
-body{
-    background-color:rgb(30, 30, 30);
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+body {
+    background-color: rgb(220, 220, 220);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 70px;
 }
-header{
+
+header {
     color: rgb(220, 255, 91);
+    background-color: black;
     font-size: 32px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    line-height: 60px;
 }
 
-.test{
-    width: 50%;
-    color: rgb(236, 236, 236);
-    size: 25px;
+p {
+    background-color: coral;
+    border: 4px solid black;
+    padding: 20px;
+    margin-top: 40px;
+    width: fit-content;
 }
-.test span{
-    font-style:italic
-}
-.test2{
-    background-color:rgb(220, 255, 91);
-    width: 50%;
-    font-size: 14px;s
-    color: rgb(30, 30, 30);
-}
-#test3{
 
-    color: rgb(220, 255, 91);
-}
-#test4{
-
-    color:rgb(220, 255, 91);
+.test span {
     font-style: italic;
 }
 
+.test2 {
+    background-color: rgb(220, 255, 91);
+    width: 50%;
+    font-size: 14px;
+    color: rgb(30, 30, 30);
+    border: 4px solid black;
+    padding: 50px;
+    margin: 20px auto;
+}
+
+.test5 {
+    color: rgb(220, 255, 91);
+    padding: 80px;
+    margin: 20px auto;
+    border: 4px solid black;
+}
+
+#test4 {
+    color: rgb(220, 255, 91);
+    font-style: italic;
+}
+
+@media (max-width: 1200px) {
+    .test2 {
+        width: 70%;
+    }
+
+    header {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .test2 {
+        width: 80%;
+        font-size: 13px;
+        padding: 40px;
+    }
+
+    header {
+        font-size: 24px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .test2 {
+        width: 90%;
+        font-size: 12px;
+        padding: 30px;
+    }
+
+    header {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    p {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .test2 {
+        width: 100%;
+        font-size: 11px;
+        padding: 20px;
+    }
+
+    header {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    p {
+        margin-top: 20px;
+        padding: 15px;
+    }
+}

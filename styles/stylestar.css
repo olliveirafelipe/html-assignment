@@ -1,0 +1,137 @@
+body {
+    background-color: #aad4cf;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('/images/lone-starfish-wide.jpg'); 
+    background-position: center; 
+    background-size: cover;
+    height: 300px;
+    position: relative; 
+    text-align: center;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    margin: 0;
+    font-size: 70px;
+}
+
+nav {
+    background-color: #e0f7f7;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content-image {
+    width: 200px;
+    margin-right: 20px;
+    height: auto;
+
+   }
+
+p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333; 
+    padding: 20px; 
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 10px; 
+    background-color: transparent; 
+    color: #333;
+    border: 1px solid #333; 
+    align-self: flex-start; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e0f7f7;
+}
